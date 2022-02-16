@@ -21,7 +21,7 @@ export function setupAppBridge (_options: any) {
 
   // Resolve vue2 builds
   nuxt.options.alias.vue2 = resolveModule('vue/dist/vue.runtime.esm.js', { paths: nuxt.options.modulesDir })
-  nuxt.options.build.transpile.push('vue')
+  nuxt.options.build.transpile.push('vue', 'vue-demi')
 
   // Disable legacy fetch polyfills
   nuxt.options.fetch.server = false
